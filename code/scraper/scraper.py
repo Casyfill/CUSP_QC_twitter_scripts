@@ -1,9 +1,6 @@
-from misc.auth import getTwitter
-from misc.setup import setup
-from misc
-from misc import mailer
+from auth import getTwitter
+from setup import setup
 
-import logging
 import time
 import datetime
 import csv
@@ -12,7 +9,7 @@ import sqlite3
 import signal
 import sys
 import os
-
+import mailer
 
 # create DB if does not exist
 if not os.path.isfile( 'twitter.db'):
@@ -47,10 +44,8 @@ nodes = [
 # Total of 20 seconds sleep between rounds
 sleep = 20.
 today = datetime.datetime.today()
-config_logger()
 
 while True:
-
     for node in nodes:
         # Execute Query
         try:
