@@ -1,5 +1,6 @@
 from twitter import Twitter, OAuth, TwitterHTTPError
 
+scraperID='CUSP'
 
 mailCredentials = {
 'apiKey' : 'APIKEY',
