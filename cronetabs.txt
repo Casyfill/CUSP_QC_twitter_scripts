@@ -1,0 +1,9 @@
+### cronetab settings and jobs
+
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+SHELL=/bin/bash
+HOME=/home/philipp/
+MAILTO=”casyfill@gmail.com"
+
+#Twitter_scraper  
+0,30 * * * * python twitter/twitter_geo_scraper/status.py >> twitter/scraping.log
