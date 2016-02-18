@@ -7,3 +7,6 @@ MAILTO=”casyfill@gmail.com"
 
 #Twitter_scraper  
 0,30 * * * * python twitter/twitter_geo_scraper/status.py >> twitter/scraping.log
+
+0,30 * * * * python /gpfs1/cusp/pbk236/QCommunities/status.py >> /gpfs1/cusp/pbk236/QCommunities/scraping.log
+

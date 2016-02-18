@@ -25,6 +25,6 @@ def send_stats(cursor):
   send_message('%s daily stats: Twitter scraping' % today, s, mailCredentials['recipients'])
 
 def send_welcoming():
-  s = '%s deployed and starts working!\n ' & scraperID
+  s = '%s deployed and starts working!\n ' % scraperID
   send_message(s, s, mailCredentials['recipients'])
 

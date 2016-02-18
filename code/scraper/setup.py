@@ -1,7 +1,14 @@
 import sqlite3
 
+import os
+import glob
+import time
+ 
+
 def setup():
-	conn = sqlite3.connect('twitter.db')
+
+	fecha = 'data/twitter'+time.strftime("%d-%m-%y-%H:%M")+'.db'
+	conn = sqlite3.connect(fecha)
 
 	c = conn.cursor()
 
@@ -11,6 +18,7 @@ def setup():
 	conn.commit()
 	conn.close()
 
+	return fecha
 
 if __name__ == '__main__':
 	setup()
