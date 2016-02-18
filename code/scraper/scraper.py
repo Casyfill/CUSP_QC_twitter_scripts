@@ -10,15 +10,17 @@ import signal
 import sys
 import os
 import mailer
+import time
+
+
 
 # create DB if does not exist
-if not os.path.isfile( 'twitter.db'):
-    print 'creating DB'
-    setup()
+
+ID = setup()
 
 
 # Connect to DB
-conn = sqlite3.connect('twitter.db')
+conn = sqlite3.connect(ID)
 
 def signal_handler(signal, frame):
     # Close connection on interrupt
@@ -103,9 +105,9 @@ while True:
 
         # MAIL REPORT 
         # print '!!!!!:', (datetime.datetime.now() - today).days
-        if (datetime.datetime.now() - today).days >0:
-            mailer.send_stats(conn)
-            today = datetime.datetime.today()
+        #if (datetime.datetime.now() - today).days >0:
+        #    mailer.send_stats(conn)
+        #    today = datetime.datetime.today()
 
         # Sleep between nodes
         time.sleep(sleep/len(nodes))
