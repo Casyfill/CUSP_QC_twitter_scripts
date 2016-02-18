@@ -2,7 +2,7 @@
 #-*- coding: utf-8 -*-
 
 import requests
-from auth import mailCredentials
+from auth import mailCredentials, scraperID
 import datetime
 
 
@@ -23,4 +23,8 @@ def send_stats(cursor):
   # s = 'Tweets: ' + cursor.execute('SELECT COUNT(*) FROM tweets').fetchone()[0] + '\nUnique Users: ' + cursor.execute('SELECT COUNT(distinct id) FROM users').fetchone()[0]
 
   send_message('%s daily stats: Twitter scraping' % today, s, mailCredentials['recipients'])
+
+def send_welcoming():
+  s = '%s deployed and starts working!\n ' & scraperID
+  send_message(s, s, mailCredentials['recipients'])
 

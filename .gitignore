@@ -5,6 +5,9 @@ __pycache__/
 
 # Data
 data/*
+.csv
+.db
 
 #Ipython Notebook
 .ipynb_checkpoints
+.pyc

@@ -1,5 +1,7 @@
 from twitter import Twitter, OAuth, TwitterHTTPError
 
+scraperID='scraperID'
+
 
 mailCredentials = {
 'apiKey' : 'APIKEY',

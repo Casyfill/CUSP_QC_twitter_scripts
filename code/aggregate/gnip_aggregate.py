@@ -39,14 +39,16 @@ def parseJsonArrayFile(path):
 def parseAll(paths):
     records = []
     for path in paths:
-        records.extend(parseJsonArrayFile(path))
+        try:
+            records.extend(parseJsonArrayFile(path))
+        except Exception, e:
+            print path, str(e)
     
     return records
 
-def parseTweet(tweet, mode='tpl'):
+def parseTweet(tweet, source):
     if 'geo' in tweet:
-        if mode=='tpl':
-            return (int(tweet['id'].split(':')[-1]),
+        return (int(tweet['id'].split(':')[-1]),
                     int(dateutil.parser.parse(tweet['postedTime']).strftime("%s")), #int(time.mktime(dateutil.parser.parse(tweet['postedTime']).timetuple())),
                     tweet['geo']['coordinates'][0],
                     tweet['geo']['coordinates'][1],
@@ -54,7 +56,8 @@ def parseTweet(tweet, mode='tpl'):
                     int(tweet['actor']['id'].split(':')[-1]),
                     tweet['retweetCount'],
                     tweet['favoritesCount'],
-                    tweet['generator']['displayName'])
+                    tweet['generator']['displayName'],
+                    source)
     else:
         pass
 
@@ -67,13 +70,14 @@ def toSQLite(folder, tweets):
 	                                               user_id INTEGER, 
 	                                               rtwts INTEGER,
 	                                               fvrts INTEGER,
-	                                               source TEXT)'''
+	                                               application TEXT,
+                                                   source TEXT)'''
 	dbPath = folder + 'gnip_twitter.db'
 
 	conn = sqlite3.connect(dbPath)
 	c = conn.cursor()
 	c.execute(tweetE)
-	c.executemany('INSERT OR IGNORE INTO tweets VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)', tweets )
+	c.executemany('INSERT OR IGNORE INTO tweets VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', tweets )
 	conn.commit()
 	conn.close()
 
@@ -83,18 +87,27 @@ def aggregate(folder):
                       '.json.gz', 
                       full=True)
 
+    
+    if len(folder.split('/')[-1] ) <2:
+        source = folder.split('/')[-2] 
+    else:
+        source = folder.split('/')[-1] 
+
     records = parseAll(files)
-    parcedRecords = [parseTweet(record) for record in records if parseTweet(record, mode='tpl')!=None]
+    parcedRecords = [parseTweet(record, source) for record in records if parseTweet(record, source='')!=None]
     toSQLite(folder, parcedRecords)
 
 
 
 if __name__ == '__main__':
-	folder = sys.argv[1]
-	if os.path.isdir(folder):
-		aggregate(folder)
-	else:
-		print 'Wrong arguement'
+    '''pass PATH_TO_FOLDER as an arguement. result will be saved in the same folder as sqlite .db file'''
+    folder = sys.argv[1]
+    if os.path.isdir(folder):
+        aggregate(folder)
+    else:
+        print 'Wrong arguement'
+
+
 
 	
 
