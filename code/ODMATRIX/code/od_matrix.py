@@ -11,10 +11,10 @@ import pandas as pd
 
 
 def selfMatrix(l):
-    '''all possible pairs of elements '''
+    '''all possible pairs of elements, once '''
 
-    for l1 in l:
-        for l2 in l:
+    for i, l1 in enumerate(l):
+        for l2 in l[i:]:
             yield (l1, l2)
 
 def framer(df):
