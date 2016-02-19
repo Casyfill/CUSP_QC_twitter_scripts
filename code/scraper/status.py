@@ -1,6 +1,6 @@
 import subprocess
-import mailer
-import auth
+from misc import mailer
+from misc import auth
 from datetime import datetime
 
 ### this script runs scraper if it is not working - it is meant to be runned from crontab
