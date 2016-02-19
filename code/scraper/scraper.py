@@ -125,9 +125,9 @@ def main():
 
             # MAIL REPORT
             # print '!!!!!:', (datetime.datetime.now() - today).days
-            if (datetime.datetime.now() - today).days > 0:
-                mailer.send_stats(conn)
-                today = datetime.datetime.today()
+            # if (datetime.datetime.now() - today).days > 0:
+            #     mailer.send_stats(conn)
+            #     today = datetime.datetime.today()
 
             # Sleep between nodes
             time.sleep(sleep / len(nodes))
