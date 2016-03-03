@@ -15,27 +15,27 @@ import os
 import multiprocessing as mp
 from sqlalchemy import create_engine
 
-# def getFiles(folder, format, full=True, filtr=None):
-#     for f in os.listdir(folder):
-#         if f.endswith(format):
-#             if filtr==None or filtr not in f:
-#                 if full:
-#                     yield os.path.join(folder, f)
-#                 else:
-#                     yield f
+def getFiles(folder, format, full=True, filtr=None):
+    for f in os.listdir(folder):
+        if f.endswith(format):
+            if filtr==None or filtr not in f:
+                if full:
+                    yield os.path.join(folder, f)
+                else:
+                    yield f
 
-# def mostRecentFile(path):
-#     '''returns most recent .db file in folder'''
+def mostRecentFile(path, frmt='.db'):
+    '''returns most recent .db file in folder'''
 
-#     def reduceRecent(current, newPath):
-#         d = os.stat(newPath).st_ctime
-#         if d > current[1]:
-#             return (newPath,d)
+    def reduceRecent(current, newPath):
+        d = os.stat(newPath).st_ctime
+        if d > current[1]:
+            return (newPath,d)
+
+    path, time = reduce(reduceRecent, getFiles(path, frmt), (None, 0))
+    return  path
 
 
-#     path, time = reduce(reduceRecent, getFiles(path, '.db'), (None, 0))
-
-#     return  path
 
 
 def correctTime(data):
@@ -53,6 +53,7 @@ def toGeoDataFrame(df, lat='Latitude',lon='Longitude'):
 
 
 def geoCode(df):
+	'''all geoprocessing part'''
 	df = df[(pd.notnull(df.lat)) & (pd.notnull(df.lon)) ] # filter tweets without geocoordinates
 
 	gdf = toGeoDataFrame(df, lat='lat', lon='lon')
@@ -61,6 +62,7 @@ def geoCode(df):
 	return sjoin(gdf, zips, how="left", op='within')
 
 def job(chunk):
+	'''main job to delegate'''
 	engine = create_engine('sqlite:///tempGeodb.db')
 	toSQL(correctTime(geoCode(chunk)), engine)
 
@@ -71,14 +73,22 @@ def toSQL(df, engine):
 	df.to_sql('tweets', conm, flavor='sqlite', if_exists='append', index=False)
 	conn.close()
 
+	# with engine.connect() as conn:
+	# 	with conn.begin():
+	# 		df.to_sql('tweets', conm, flavor='sqlite', if_exists='append', index=False)
 
-def main(path):
-	engine = create_engine('sqlite:///%s' % path)
+
+
+def main():
+	fPath =  mostRecentFile('DATAVAULT/OUT/', '.db')
+	print fPath
+
+
+	engine = create_engine('sqlite:///%s' % fPath)
 	columns = ('id','timestamp','lon', 'lat', 'tweet', 'user_id', 'rtwts', 'fvrts', 'application', 'source')
 	
-	conn  = engine.connect()
+	conn = engine.connect()
 	conn.begin()
-	
 	chunks = pd.read_sql_table('tweets', conn, columns=columns, chunksize=100)
 
 	pool = mp.Pool()
@@ -87,4 +97,5 @@ def main(path):
 
 
 if __name__ == '__main__':
-	main('merged1.db')
+	
+	main()
