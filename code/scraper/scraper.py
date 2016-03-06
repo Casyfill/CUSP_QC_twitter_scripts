@@ -14,7 +14,11 @@ import re
 
 def getSource(txt):
     sourcer = re.compile('(?:.*>)(.*)(?:<\/a>)')
-    return sourcer.search(txt).groups()[0]
+    x = sourcer.search(txt)
+    if x:
+        return x.groups()[0]
+    else:
+        return 'unknnown'
 
 def main():
     print 'scraping!'
