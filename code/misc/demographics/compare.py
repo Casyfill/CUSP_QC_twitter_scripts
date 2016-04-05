@@ -2,12 +2,10 @@
 #-*- coding: utf-8 -*-
 
 import pandas as pd
-import geopandas as gp
-import os
 
 import matplotlib.pyplot as plt
 
-dem = pd.read_csv('Demographic_2014.csv')
+dem = pd.read_csv('demographic/demographic.csv', low_memory=False)
 dem.drop(dem.index[0], inplace=1)
 
 
@@ -27,13 +25,13 @@ def compare(featureSet, partition, ax=None, data=dem):
         - comparison presets
 
     '''
-    
+
     for feature in featureSet:
     	if feature not in data.columns:
-            raise InputError('Feature %s not in the dataset' % feature)
+            raise IOError('Feature %s not in the dataset' % feature)
 
     if 'zip' not in partition.columns or 'label' not in partition.columns:
-        raise InputError("can't see zip in the partition")
+        raise IOError("can't see zip in the partition")
 
     nClstrs = len(partition['label'].unique())  # number of clusters
 
