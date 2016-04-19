@@ -6,12 +6,13 @@ import pandas as pd
 import geopandas as gp
 from shapely.geometry import Point
 import os
+from ipynotifyer import notifyOnComplete as nf
 
 
 def getFiles(folder, format, full=True, filtr=None):
     for f in os.listdir(folder):
         if f.endswith(format):
-            if filtr==None or filtr not in f:
+            if filtr is None or filtr not in f:
                 if full:
                     yield os.path.join(folder, f)
                 else:
@@ -24,39 +25,41 @@ def mostRecentFile(path):
     def reduceRecent(current, newPath):
         d = os.stat(newPath).st_ctime
         if d > current[1]:
-            return (newPath,d)
-
+            return (newPath, d)
 
     path, time = reduce(reduceRecent, getFiles(path, 'db'), (None, 0))
 
-    return  path
+    return path
+
 
 def getSQLiteTweets(path, cols):
     '''gets all data as tuple'''
     query = 'SELECT %s FROM tweets' % ', '.join(cols)
 
     conn = sqlite3.connect(path)
-    data = conn.cursor().execute(query).fetchall() ## all but raw data
+    data = conn.cursor().execute(query).fetchall()  # all but raw data
     conn.close()
     return data
 
+
+@nf
 def getDF(path):
-    
     engine = create_engine('sqlite:///%s' % path)
-    columns = ('id','timestamp','lon', 'lat', 'tweet', 'user_id', 'rtwts', 'fvrts', 'application', 'source')
+    columns = ('id', 'timestamp', 'lon', 'lat', 'tweet', 'user_id',
+               'rtwts', 'fvrts', 'application', 'source', 'postalCode', 'ts')
 
     with engine.connect() as conn, conn.begin():
         data = pd.read_sql_table('tweets', conn, columns=columns)
 
-    data['ts'] = pd.to_datetime(data.timestamp, unit='s') - datetime.timedelta(hours=5) ## UTS - 5h NYC
-    return misc.toGeoDataFrame(data, lat='lat',lon='lon')  
+    data = data[pd.notnull(data.lat)]
+    # data['ts'] = pd.to_datetime(
+    #     data.timestamp, unit='s') - datetime.timedelta(hours=5)  # UTS - 5h NYC
+    return misc.toGeoDataFrame(data, lat='lat', lon='lon')
 
 
-
-def toGeoDataFrame(df, lat='Latitude',lon='Longitude'):
+def toGeoDataFrame(df, lat='Latitude', lon='Longitude'):
     '''dataframe to geodataframe'''
     df['geometry'] = df.apply(lambda z: Point(z[lon], z[lat]), axis=1)
     df = gp.GeoDataFrame(df)
     df.crs = {'init': 'epsg:4326', 'no_defs': True}
-    return df 
-    
+    return df
