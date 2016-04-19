@@ -5,11 +5,12 @@ import pandas as pd
 
 import matplotlib.pyplot as plt
 
-dem = pd.read_csv('demographic/demographic.csv', low_memory=False)
+dem = pd.read_csv('demographic/demographic.csv', low_memory=False, skiprows=1)
 dem.drop(dem.index[0], inplace=1)
 
 
-def compare(featureSet, partition, ax=None, data=dem):
+def compare(features, partition, ax=None,
+            title='Feature comparison for partition', data=dem):
     '''
     compare clusters of zipcodes using specific feature
 
@@ -18,16 +19,19 @@ def compare(featureSet, partition, ax=None, data=dem):
     ax - ax, subplot to populate the plot, optional
     data - df, dataset to retrieve feature from
 
-    TODO:
-        - plot size
-        - legend minimize
-        - title
-        - comparison presets
+    # TODO  plot size
+    # TODO  legend minimize
+    # TODO  title
+    # TODO  comparison presets
+    # TODO  solve docstring-dem issue
 
     '''
+    featureSet = features.keys()
+    flabels = features.values()
+    # print data.columns
 
     for feature in featureSet:
-    	if feature not in data.columns:
+        if feature not in data.columns:
             raise IOError('Feature %s not in the dataset' % feature)
 
     if 'zip' not in partition.columns or 'label' not in partition.columns:
@@ -42,11 +46,10 @@ def compare(featureSet, partition, ax=None, data=dem):
         width = min(nClstrs * 2, 18)
         fig, ax = plt.subplots(figsize=(width, 5))
 
-        plt.axis('off')
-
+        # plt.axis('off')
 
     # get only features and zipcode. rename zipcode
-    zn = 'ZIP Code Tabulation Area (5-digit)'
+    zn = 'Geo_ZCTA5'
     fset = data[[zn] + featureSet].rename(columns={zn: 'zip'})
 
     # group and calculate
@@ -55,5 +58,7 @@ def compare(featureSet, partition, ax=None, data=dem):
     x = d.divide(d.sum(1), 0)
 
     x.plot(kind='bar', cmap='spectral', ax=ax, stacked=True)
+    plt.legend(flabels)
+    plt.title(title)
 
     return x

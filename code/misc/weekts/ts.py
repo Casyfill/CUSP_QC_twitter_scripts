@@ -5,7 +5,17 @@ import pylab as plt
 import pandas as pd
 
 
-def averageWeek(df, ax=None, tcol='ts', ccol='application',
+def normaliseTimeseries(df, transpose=True):
+    '''transpose and normilize timeseries by themself
+       removing the median and dividing by sdt'''
+
+    if transpose:
+        df = df.T
+
+    return (df - df.mean(0))/df.std(0)
+
+
+def averageWeek(df, ax=None, tcol='ts', ccol='id',
                 label=None, treshold=0, normalize=True,
                 verbose=False, **kwargs):
     '''calculate average week on ts'''
@@ -52,37 +62,37 @@ def averageWeek(df, ax=None, tcol='ts', ccol='application',
 
 
 def bulkWeeks(df, attr, title='', av=False, th=0, legend=False, **kwargs):
-	'''
-	create and plot average weekSeries using attr column for partition
-	'''
-	fig, ax = plt.subplots(figsize=(18, 6))
+    '''
+    create and plot average weekSeries using attr column for partition
+    '''
+    fig, ax = plt.subplots(figsize=(18, 6))
 
-	weeks = []
+    weeks = []
 
-	for name, g in df.groupby(attr):
-		zs = averageWeek(g, ax=ax, label=name, alpha=.5, treshold=th, **kwargs)
-		weeks.append(zs)
+    for name, g in df.groupby(attr):
+        zs = averageWeek(g, ax=ax, label=name, alpha=.5, treshold=th, **kwargs)
+        weeks.append(zs)
 
-	data = pd.concat(weeks, axis=1)
-	if av:
-		d = data.mean(axis=1)
-        (1.0 * d / d.sum()).plot(ax=ax, lw=1.4, color='k', label='Average')
+    data = pd.concat(weeks, axis=1)
+    if av:
+        d = data.mean(axis=1)
+    (1.0 * d / d.sum()).plot(ax=ax, lw=1.4, color='k', label='Average')
 
-	ax.set_title('%s, treshold=%d' % (title, th), fontsize=15)
+    ax.set_title('%s, treshold=%d' % (title, th), fontsize=15)
 
-	if legend:
-		ax.legend()
+    if legend:
+        ax.legend()
 
-	labels = ['Monday', 'Tuesday', 'Wednesday',
-			  'Thursday', 'Friday', 'Saturday', 'Sunday']
+    labels = ['Monday', 'Tuesday', 'Wednesday',
+              'Thursday', 'Friday', 'Saturday', 'Sunday']
 
-	dates = [datetime.datetime(
-		year=2015, month=1, day=i, hour=0, minute=0) for i in range(1, 8)]
+    dates = [datetime.datetime(
+        year=2015, month=1, day=i, hour=0, minute=0) for i in range(1, 8)]
 
-	ax.set_xticklabels([], minor=False)  # the default
-	ax.set_xticklabels(labels, minor=True)
+    ax.set_xticklabels([], minor=False)  # the default
+    ax.set_xticklabels(labels, minor=True)
 
-	for d in dates:
-		ax.axvline(x=d, ymin=0, ymax=1, alpha=.5, linewidth=4)
+    for d in dates:
+        ax.axvline(x=d, ymin=0, ymax=1, alpha=.5, linewidth=4)
 
-	return data
+    return data
