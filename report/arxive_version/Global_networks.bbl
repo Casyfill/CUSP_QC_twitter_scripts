@@ -1,0 +1,543 @@
+\begin{thebibliography}{57}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname bibnamefont\endcsname\relax
+  \def\bibnamefont#1{#1}\fi
+\expandafter\ifx\csname bibfnamefont\endcsname\relax
+  \def\bibfnamefont#1{#1}\fi
+\expandafter\ifx\csname citenamefont\endcsname\relax
+  \def\citenamefont#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{\citenamefont{Ratti et~al.}(2006)\citenamefont{Ratti, Williams,
+  Frenchman, and Pulselli}}]{ratti2006mlu}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Williams}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Frenchman}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Pulselli}},
+  \bibinfo{journal}{Environment and Planning B} \textbf{\bibinfo{volume}{33}},
+  \bibinfo{pages}{727} (\bibinfo{year}{2006}).
+
+\bibitem[{\citenamefont{Calabrese and Ratti}(2006)}]{calabrese2006real}
+\bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Calabrese}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}},
+  \bibinfo{journal}{Networks and Communication Studies}
+  \textbf{\bibinfo{volume}{20}}, \bibinfo{pages}{247} (\bibinfo{year}{2006}).
+
+\bibitem[{\citenamefont{Girardin et~al.}(2008)\citenamefont{Girardin,
+  Calabrese, Fiore, Ratti, and Blat}}]{girardin2008digital}
+\bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Girardin}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Calabrese}},
+  \bibinfo{author}{\bibfnamefont{F.~D.} \bibnamefont{Fiore}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Blat}},
+  \bibinfo{journal}{IEEE Pervasive Computing} \textbf{\bibinfo{volume}{7}},
+  \bibinfo{pages}{36} (\bibinfo{year}{2008}).
+
+\bibitem[{\citenamefont{Quercia et~al.}(2010)\citenamefont{Quercia, Lathia,
+  Calabrese, Di~Lorenzo, and Crowcroft}}]{quercia2010rse}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Quercia}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Lathia}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Calabrese}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Di~Lorenzo}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Crowcroft}}, in
+  \emph{\bibinfo{booktitle}{Proceedings of the 10th IEEE International
+  Conference on Data Mining}} (\bibinfo{publisher}{IEEE},
+  \bibinfo{year}{2010}), pp. \bibinfo{pages}{971--976}.
+
+\bibitem[{\citenamefont{Santi et~al.}(2014)\citenamefont{Santi, Resta, Szell,
+  Sobolevsky, Strogatz, and Ratti}}]{santi2013taxi}
+\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Santi}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Resta}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Szell}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sobolevsky}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Strogatz}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}},
+  \bibinfo{journal}{Proceedings of the National Academy of Sciences}
+  \textbf{\bibinfo{volume}{111}}, \bibinfo{pages}{13290}
+  (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Kang et~al.}(2013)\citenamefont{Kang, Sobolevsky, Liu,
+  and Ratti}}]{kang2013exploring}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Kang}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sobolevsky}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Liu}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}}, in
+  \emph{\bibinfo{booktitle}{Proceedings of the 2nd ACM SIGKDD International
+  Workshop on Urban Computing}} (\bibinfo{publisher}{ACM New York, NY, USA},
+  \bibinfo{year}{2013}), pp. \bibinfo{pages}{1--8}.
+
+\bibitem[{\citenamefont{Bagchi and White}(2005)}]{bagchi2005}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Bagchi}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{White}},
+  \bibinfo{journal}{Transport Policy} \textbf{\bibinfo{volume}{12}},
+  \bibinfo{pages}{464} (\bibinfo{year}{2005}).
+
+\bibitem[{\citenamefont{Lathia et~al.}(2012)\citenamefont{Lathia, Quercia, and
+  Crowcroft}}]{lathia2012}
+\bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Lathia}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Quercia}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Crowcroft}}, in
+  \emph{\bibinfo{booktitle}{Pervasive Computing}}, edited by
+  \bibinfo{editor}{\bibfnamefont{J.}~\bibnamefont{Kay}},
+  \bibinfo{editor}{\bibfnamefont{P.}~\bibnamefont{Lukowicz}},
+  \bibinfo{editor}{\bibfnamefont{H.}~\bibnamefont{Tokuda}},
+  \bibinfo{editor}{\bibfnamefont{P.}~\bibnamefont{Olivier}}, \bibnamefont{and}
+  \bibinfo{editor}{\bibfnamefont{A.}~\bibnamefont{Krüger}}
+  (\bibinfo{publisher}{Springer}, \bibinfo{year}{2012}), vol.
+  \bibinfo{volume}{7319} of \emph{\bibinfo{series}{Lecture Notes in Computer
+  Science}}, pp. \bibinfo{pages}{91--98}.
+
+\bibitem[{\citenamefont{Java et~al.}(2007)\citenamefont{Java, Song, Finin, and
+  Tseng}}]{java2007we}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Java}},
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{Song}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Finin}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Tseng}}, in
+  \emph{\bibinfo{booktitle}{Proceedings of the 9th WebKDD and 1st SNA-KDD 2007
+  workshop on Web mining and social network analysis}} (\bibinfo{publisher}{ACM
+  New York, NY, USA}, \bibinfo{year}{2007}), pp. \bibinfo{pages}{56--65}.
+
+\bibitem[{\citenamefont{Szell et~al.}(2014)\citenamefont{Szell, Grauwin, and
+  Ratti}}]{szell2013}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Szell}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Grauwin}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}},
+  \bibinfo{journal}{PloS One} \textbf{\bibinfo{volume}{9}}, \bibinfo{pages}{1}
+  (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Frank et~al.}(2013)\citenamefont{Frank, Mitchell,
+  Dodds, and Danforth}}]{frank2013happiness}
+\bibinfo{author}{\bibfnamefont{M.~R.} \bibnamefont{Frank}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Mitchell}},
+  \bibinfo{author}{\bibfnamefont{P.~S.} \bibnamefont{Dodds}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.~M.} \bibnamefont{Danforth}},
+  \bibinfo{journal}{Scientific Reports} pp. \bibinfo{pages}{1--9}
+  (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Sobolevsky
+  et~al.}(2014{\natexlab{a}})\citenamefont{Sobolevsky, Sitko, Grauwin,
+  Tachet~des Combes, Hawelka, Arias, and Ratti}}]{sobolevsky2014mining}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sobolevsky}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Sitko}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Grauwin}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Tachet~des Combes}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Hawelka}},
+  \bibinfo{author}{\bibfnamefont{J.~M.} \bibnamefont{Arias}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}}, in
+  \emph{\bibinfo{booktitle}{Proceedings of the 2nd ASE International Conference
+  on Big data Science and Computing}} (\bibinfo{publisher}{ASE, Stanford},
+  \bibinfo{year}{2014}{\natexlab{a}}), pp. \bibinfo{pages}{1--10}.
+
+\bibitem[{\citenamefont{Sobolevsky
+  et~al.}(2014{\natexlab{b}})\citenamefont{Sobolevsky, Sitko, Tachet~des
+  Combes, Hawelka, Arias, and Ratti}}]{sobolevsky2014money}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sobolevsky}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Sitko}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Tachet~des Combes}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Hawelka}},
+  \bibinfo{author}{\bibfnamefont{J.~M.} \bibnamefont{Arias}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}}, in
+  \emph{\bibinfo{booktitle}{Proceedings of the IEEE International Congress on
+  Big Data}} (\bibinfo{publisher}{IEEE}, \bibinfo{year}{2014}{\natexlab{b}}),
+  pp. \bibinfo{pages}{136--143}.
+
+\bibitem[{\citenamefont{Sobolevsky
+  et~al.}(2015{\natexlab{a}})\citenamefont{Sobolevsky, Sitko, Combes, Hawelka,
+  Arias, and Ratti}}]{sobolevsky2015cities}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sobolevsky}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Sitko}},
+  \bibinfo{author}{\bibfnamefont{R.~T.~d.} \bibnamefont{Combes}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Hawelka}},
+  \bibinfo{author}{\bibfnamefont{J.~M.} \bibnamefont{Arias}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}},
+  \bibinfo{journal}{arXiv preprint arXiv:1505.03854} pp. \bibinfo{pages}{1--21}
+  (\bibinfo{year}{2015}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Sobolevsky
+  et~al.}(2015{\natexlab{b}})\citenamefont{Sobolevsky, Massaro, Bojic, Arias,
+  and Ratti}}]{sobolevsky2015predicting}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sobolevsky}},
+  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Massaro}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Bojic}},
+  \bibinfo{author}{\bibfnamefont{J.~M.} \bibnamefont{Arias}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}}, in
+  \emph{\bibinfo{booktitle}{Proceedings of the 6th ASE International Conference
+  on Data Science}} (\bibinfo{publisher}{ASE, Stanford},
+  \bibinfo{year}{2015}{\natexlab{b}}), pp. \bibinfo{pages}{1--12}.
+
+\bibitem[{\citenamefont{Ratti et~al.}(2010)\citenamefont{Ratti, Sobolevsky,
+  Calabrese, Andris, Reades, Martino, Claxton, and
+  Strogatz}}]{ratti2010redrawing}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sobolevsky}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Calabrese}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Andris}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Reades}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Martino}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Claxton}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.~H.} \bibnamefont{Strogatz}},
+  \bibinfo{journal}{PLoS One} \textbf{\bibinfo{volume}{5}}, \bibinfo{pages}{1}
+  (\bibinfo{year}{2010}).
+
+\bibitem[{\citenamefont{Sobolevsky et~al.}(2013)\citenamefont{Sobolevsky,
+  Szell, Campari, Couronn{\'e}, Smoreda, and
+  Ratti}}]{sobolevsky2013delineating}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sobolevsky}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Szell}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Campari}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Couronn{\'e}}},
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Smoreda}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}},
+  \bibinfo{journal}{PloS One} \textbf{\bibinfo{volume}{8}}, \bibinfo{pages}{1}
+  (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Pei et~al.}(2014)\citenamefont{Pei, Sobolevsky, Ratti,
+  Shaw, Li, and Zhou}}]{pei2014new}
+\bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Pei}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sobolevsky}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}},
+  \bibinfo{author}{\bibfnamefont{S.-L.} \bibnamefont{Shaw}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Li}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Zhou}},
+  \bibinfo{journal}{International Journal of Geographical Information Science}
+  \textbf{\bibinfo{volume}{28}}, \bibinfo{pages}{1988} (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Grauwin
+  et~al.}(2015{\natexlab{a}})\citenamefont{Grauwin, Sobolevsky, Moritz,
+  G{\'o}dor, and Ratti}}]{grauwin2014towards}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Grauwin}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sobolevsky}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Moritz}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{G{\'o}dor}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}}, in
+  \emph{\bibinfo{booktitle}{Computational Approaches for Urban Environments}},
+  edited by \bibinfo{editor}{\bibfnamefont{M.}~\bibnamefont{Helbich}},
+  \bibinfo{editor}{\bibfnamefont{J.~J.} \bibnamefont{Arsanjani}},
+  \bibnamefont{and} \bibinfo{editor}{\bibfnamefont{M.}~\bibnamefont{Leitner}}
+  (\bibinfo{publisher}{Springer}, \bibinfo{year}{2015}{\natexlab{a}}),
+  vol.~\bibinfo{volume}{13} of \emph{\bibinfo{series}{Geotechnologies and the
+  Environment}}, pp. \bibinfo{pages}{363--387}.
+
+\bibitem[{\citenamefont{Gonz{\'a}lez et~al.}(2008)\citenamefont{Gonz{\'a}lez,
+  Hidalgo, and Barab{\'a}si}}]{gonzalez2008uih}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Gonz{\'a}lez}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Hidalgo}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.-L.} \bibnamefont{Barab{\'a}si}},
+  \bibinfo{journal}{Nature} \textbf{\bibinfo{volume}{453}},
+  \bibinfo{pages}{779} (\bibinfo{year}{2008}).
+
+\bibitem[{\citenamefont{Kung et~al.}(2014)\citenamefont{Kung, Greco,
+  Sobolevsky, and Ratti}}]{kung2014exploring}
+\bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Kung}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Greco}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sobolevsky}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}},
+  \bibinfo{journal}{PLoS One} \textbf{\bibinfo{volume}{9}}, \bibinfo{pages}{1}
+  (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Hoteit et~al.}(2014)\citenamefont{Hoteit, Secci,
+  Sobolevsky, Ratti, and Pujolle}}]{hoteit2014estimating}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Hoteit}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Secci}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sobolevsky}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Pujolle}},
+  \bibinfo{journal}{Computer Networks} \textbf{\bibinfo{volume}{64}},
+  \bibinfo{pages}{296} (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Amini et~al.}(2014)\citenamefont{Amini, Kung, Kang,
+  Sobolevsky, and Ratti}}]{amini2014impact}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Amini}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Kung}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Kang}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sobolevsky}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}},
+  \bibinfo{journal}{EPJ Data Science} \textbf{\bibinfo{volume}{3}},
+  \bibinfo{pages}{1} (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Greenwood}(1985)}]{greenwood1985human}
+\bibinfo{author}{\bibfnamefont{M.~J.} \bibnamefont{Greenwood}},
+  \bibinfo{journal}{Journal of regional Science} \textbf{\bibinfo{volume}{25}},
+  \bibinfo{pages}{521} (\bibinfo{year}{1985}).
+
+\bibitem[{\citenamefont{Fagiolo and
+  Mastrorillo}(2013)}]{fagiolo2013international}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Fagiolo}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Mastrorillo}},
+  \bibinfo{journal}{Physical Review E} \textbf{\bibinfo{volume}{88}},
+  \bibinfo{pages}{012812} (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Abel and Sander}(2014)}]{abel2014quantifying}
+\bibinfo{author}{\bibfnamefont{G.~J.} \bibnamefont{Abel}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Sander}},
+  \bibinfo{journal}{Science} \textbf{\bibinfo{volume}{343}},
+  \bibinfo{pages}{1520} (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Tranos et~al.}(2015)\citenamefont{Tranos, Gheasi, and
+  Nijkamp}}]{tranos2012international}
+\bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Tranos}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Gheasi}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Nijkamp}},
+  \bibinfo{journal}{Environment and Planning B: Planning and Design}
+  \textbf{\bibinfo{volume}{42}}, \bibinfo{pages}{4} (\bibinfo{year}{2015}).
+
+\bibitem[{\citenamefont{Hawelka et~al.}(2014)\citenamefont{Hawelka, Sitko,
+  Beinat, Sobolevsky, Kazakopoulos, and Ratti}}]{hawelka2014}
+\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Hawelka}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Sitko}},
+  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Beinat}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sobolevsky}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Kazakopoulos}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}},
+  \bibinfo{journal}{Cartography and Geographic Information Science}
+  \textbf{\bibinfo{volume}{41}}, \bibinfo{pages}{260} (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Paldino et~al.}(2015)\citenamefont{Paldino, Bojic,
+  Sobolevsky, Ratti, and Gonz{\'a}lez}}]{paldino2015flickr}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Paldino}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Bojic}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sobolevsky}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.~C.} \bibnamefont{Gonz{\'a}lez}},
+  \bibinfo{journal}{EPJ Data Science} \textbf{\bibinfo{volume}{4}},
+  \bibinfo{pages}{1} (\bibinfo{year}{2015}).
+
+\bibitem[{\citenamefont{Sobolevsky
+  et~al.}(2015{\natexlab{c}})\citenamefont{Sobolevsky, Bojic, Belyi, Sitko,
+  Hawelka, Murillo~Arias, and Ratti}}]{sobolevsky2015scaling}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sobolevsky}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Bojic}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Belyi}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Sitko}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Hawelka}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Murillo~Arias}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}}, in
+  \emph{\bibinfo{booktitle}{Big Data (BigData Congress), 2015 IEEE
+  International Congress on}} (\bibinfo{publisher}{IEEE},
+  \bibinfo{year}{2015}{\natexlab{c}}), pp. \bibinfo{pages}{600--607}.
+
+\bibitem[{\citenamefont{Sgrignoli et~al.}(2015)\citenamefont{Sgrignoli,
+  Metulini, Schiavo, and Riccaboni}}]{sgrignoli2015relation}
+\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Sgrignoli}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Metulini}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Schiavo}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Riccaboni}},
+  \bibinfo{journal}{Physica A: Statistical Mechanics and its Applications}
+  \textbf{\bibinfo{volume}{417}}, \bibinfo{pages}{245} (\bibinfo{year}{2015}).
+
+\bibitem[{\citenamefont{Fagiolo and Mastrorillo}(2014)}]{fagiolo2014does}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Fagiolo}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Mastrorillo}},
+  \bibinfo{journal}{PLoS ONE} \textbf{\bibinfo{volume}{9}},
+  \bibinfo{pages}{e97331} (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Kivel{\"a} et~al.}(2014)\citenamefont{Kivel{\"a},
+  Arenas, Barthelemy, Gleeson, Moreno, and Porter}}]{kivela2014multilayer}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Kivel{\"a}}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Arenas}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Barthelemy}},
+  \bibinfo{author}{\bibfnamefont{J.~P.} \bibnamefont{Gleeson}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Moreno}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.~A.} \bibnamefont{Porter}},
+  \bibinfo{journal}{Journal of Complex Networks} \textbf{\bibinfo{volume}{2}},
+  \bibinfo{pages}{203} (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Mount}(2010)}]{flickr1}
+\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Mount}} (\bibinfo{year}{2010}),
+  \bibinfo{note}{available from: \url{http://sfgeo.org/data/tourist-local}}.
+
+\bibitem[{\citenamefont{Thomee et~al.}(2015)\citenamefont{Thomee, Shamma,
+  Friedland, Elizalde, Ni, Poland, Borth, and Li}}]{thomee2015yfcc100m}
+\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Thomee}},
+  \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Shamma}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Friedland}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Elizalde}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Ni}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Poland}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Borth}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{L.-J.} \bibnamefont{Li}},
+  \bibinfo{journal}{arXiv preprint arXiv:1503.01817}  (\bibinfo{year}{2015}).
+
+\bibitem[{\citenamefont{Twitter}(2013)}]{twitterapi}
+\bibinfo{author}{\bibnamefont{Twitter}} (\bibinfo{year}{2013}),
+  \bibinfo{note}{available from:
+  \url{https://dev.twitter.com/streaming/public}}.
+
+\bibitem[{\citenamefont{Bojic et~al.}(2015)\citenamefont{Bojic, Massaro, Belyi,
+  Sobolevsky, and Ratti}}]{bojic2015choosing}
+\bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Bojic}},
+  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Massaro}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Belyi}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sobolevsky}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}}, in
+  \emph{\bibinfo{booktitle}{Social Informatics}}, edited by
+  \bibinfo{editor}{\bibfnamefont{T.-Y.} \bibnamefont{Liu}},
+  \bibinfo{editor}{\bibfnamefont{C.~N.} \bibnamefont{Scollon}},
+  \bibnamefont{and} \bibinfo{editor}{\bibfnamefont{W.}~\bibnamefont{Zhu}}
+  (\bibinfo{publisher}{Springer International Publishing},
+  \bibinfo{year}{2015}), vol. \bibinfo{volume}{9471} of
+  \emph{\bibinfo{series}{Lecture Notes in Computer Science}}, pp.
+  \bibinfo{pages}{194--208}, ISBN \bibinfo{isbn}{978-3-319-27432-4},
+  \urlprefix\url{http://dx.doi.org/10.1007/978-3-319-27433-1_14}.
+
+\bibitem[{\citenamefont{{United Nations}}(2015)}]{unMigration}
+\bibinfo{author}{\bibnamefont{{United Nations}}} (\bibinfo{year}{2015}),
+  \bibinfo{note}{available from:
+  \url{http://www.un.org/en/development/desa/population/migration/data/index.shtml}}.
+
+\bibitem[{\citenamefont{Hensel}(2009)}]{hensel2009icow}
+\bibinfo{author}{\bibfnamefont{P.~R.} \bibnamefont{Hensel}}
+  (\bibinfo{year}{2009}), \bibinfo{note}{available from:
+  \url{http://www.paulhensel.org/icowcol.html}}.
+
+\bibitem[{\citenamefont{Infoplease}(2015)}]{Languages}
+\bibinfo{author}{\bibnamefont{Infoplease}} (\bibinfo{year}{2015}),
+  \bibinfo{note}{available from:
+  \url{http://www.infoplease.com/ipa/A0855611.html}}.
+
+\bibitem[{\citenamefont{{United Nations}}(2014)}]{UNCOMTRADE}
+\bibinfo{author}{\bibnamefont{{United Nations}}} (\bibinfo{year}{2014}),
+  \bibinfo{note}{available from: \url{http://comtrade.un.org}}.
+
+\bibitem[{\citenamefont{Zipf}(1946)}]{Gravity1946Zipf}
+\bibinfo{author}{\bibfnamefont{G.~K.} \bibnamefont{Zipf}},
+  \bibinfo{journal}{American sociological review} pp. \bibinfo{pages}{677--686}
+  (\bibinfo{year}{1946}).
+
+\bibitem[{\citenamefont{Barth{\'e}lemy}(2011)}]{Barthelemy2011Spatial}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Barth{\'e}lemy}},
+  \bibinfo{journal}{Physics Reports} \textbf{\bibinfo{volume}{499}},
+  \bibinfo{pages}{1} (\bibinfo{year}{2011}).
+
+\bibitem[{\citenamefont{Simini et~al.}(2012)\citenamefont{Simini, Gonz{\'a}lez,
+  Maritan, and Barab{\'a}si}}]{RadiationModel}
+\bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Simini}},
+  \bibinfo{author}{\bibfnamefont{M.~C.} \bibnamefont{Gonz{\'a}lez}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Maritan}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.-L.} \bibnamefont{Barab{\'a}si}},
+  \bibinfo{journal}{Nature} \textbf{\bibinfo{volume}{484}}, \bibinfo{pages}{96}
+  (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Wilson}(1967)}]{wilson1967statistical}
+\bibinfo{author}{\bibfnamefont{A.~G.} \bibnamefont{Wilson}},
+  \bibinfo{journal}{Transportation research} \textbf{\bibinfo{volume}{1}},
+  \bibinfo{pages}{253} (\bibinfo{year}{1967}).
+
+\bibitem[{\citenamefont{Sagarra et~al.}(2013)\citenamefont{Sagarra, Vicente,
+  and D{\"\i}az-Guilera}}]{sagarra2013statistical}
+\bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Sagarra}},
+  \bibinfo{author}{\bibfnamefont{C.~P.} \bibnamefont{Vicente}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{D{\"\i}az-Guilera}},
+  \bibinfo{journal}{Physical Review E} \textbf{\bibinfo{volume}{88}},
+  \bibinfo{pages}{062806} (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Grauwin
+  et~al.}(2015{\natexlab{b}})\citenamefont{Grauwin, Szell, Sobolevsky,
+  H{\"o}vel, Simini, Vanhoof, Smoreda, Barabasi, and
+  Ratti}}]{grauwin2015identifying}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Grauwin}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Szell}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sobolevsky}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{H{\"o}vel}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Simini}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Vanhoof}},
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Smoreda}},
+  \bibinfo{author}{\bibfnamefont{A.-L.} \bibnamefont{Barabasi}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}},
+  \bibinfo{journal}{arXiv preprint arXiv:1509.03149}
+  (\bibinfo{year}{2015}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Masucci et~al.}(2013)\citenamefont{Masucci, Serras,
+  Johansson, and Batty}}]{masucci2013gravity}
+\bibinfo{author}{\bibfnamefont{A.~P.} \bibnamefont{Masucci}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Serras}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Johansson}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Batty}},
+  \bibinfo{journal}{Physical Review E} \textbf{\bibinfo{volume}{88}},
+  \bibinfo{pages}{022812} (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Mucha et~al.}(2010)\citenamefont{Mucha, Richardson,
+  Macon, Porter, and Onnela}}]{mucha2010community}
+\bibinfo{author}{\bibfnamefont{P.~J.} \bibnamefont{Mucha}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Richardson}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Macon}},
+  \bibinfo{author}{\bibfnamefont{M.~A.} \bibnamefont{Porter}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{J.-P.}
+  \bibnamefont{Onnela}}, \bibinfo{journal}{Science}
+  \textbf{\bibinfo{volume}{328}}, \bibinfo{pages}{876} (\bibinfo{year}{2010}).
+
+\bibitem[{\citenamefont{Tang et~al.}(2012)\citenamefont{Tang, Wang, and
+  Liu}}]{tang2012community}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Tang}},
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{Wang}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Liu}}, \bibinfo{journal}{Data
+  Mining and Knowledge Discovery} \textbf{\bibinfo{volume}{25}},
+  \bibinfo{pages}{1} (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Newman and Girvan}(2004)}]{newman2004}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Newman}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Girvan}},
+  \bibinfo{journal}{Physical Review E} \textbf{\bibinfo{volume}{69}},
+  \bibinfo{pages}{026113} (\bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{Newman}(2006)}]{newman2006}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Newman}},
+  \bibinfo{journal}{Proceedings of the National Academy of Sciences}
+  \textbf{\bibinfo{volume}{103}}, \bibinfo{pages}{8577} (\bibinfo{year}{2006}).
+
+\bibitem[{\citenamefont{Fortunato and
+  Barth{\'e}l{\'e}my}(2007)}]{Fortunato02012007ResolutionLimit}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Fortunato}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Barth{\'e}l{\'e}my}},
+  \bibinfo{journal}{Proceedings of the National Academy of Sciences}
+  \textbf{\bibinfo{volume}{104}}, \bibinfo{pages}{36} (\bibinfo{year}{2007}),
+  \eprint{http://www.pnas.org/content/104/1/36.full.pdf+html},
+  \urlprefix\url{http://www.pnas.org/content/104/1/36.abstract}.
+
+\bibitem[{\citenamefont{Good et~al.}(2010)\citenamefont{Good, de~Montjoye, and
+  Clauset}}]{Good2010PerformanceOfModularity}
+\bibinfo{author}{\bibfnamefont{B.~H.} \bibnamefont{Good}},
+  \bibinfo{author}{\bibfnamefont{Y.-A.} \bibnamefont{de~Montjoye}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Clauset}},
+  \bibinfo{journal}{Physical Review E} \textbf{\bibinfo{volume}{81}},
+  \bibinfo{pages}{046106} (\bibinfo{year}{2010}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevE.81.046106}.
+
+\bibitem[{\citenamefont{Arenas et~al.}(2008)\citenamefont{Arenas,
+  Fern{\'a}ndez, and G{\'o}mez}}]{Arenas2008Analysis}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Arenas}},
+  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Fern{\'a}ndez}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{G{\'o}mez}},
+  \bibinfo{journal}{New Journal of Physics} \textbf{\bibinfo{volume}{10}},
+  \bibinfo{pages}{053039} (\bibinfo{year}{2008}),
+  \urlprefix\url{http://stacks.iop.org/1367-2630/10/i=5/a=053039}.
+
+\bibitem[{\citenamefont{Sobolevsky
+  et~al.}(2014{\natexlab{c}})\citenamefont{Sobolevsky, Campari, Belyi, and
+  Ratti}}]{Combo}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sobolevsky}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Campari}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Belyi}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Ratti}},
+  \bibinfo{journal}{Physical Review E} \textbf{\bibinfo{volume}{90}},
+  \bibinfo{pages}{012811} (\bibinfo{year}{2014}{\natexlab{c}}).
+
+\bibitem[{\citenamefont{Danon et~al.}(2005)\citenamefont{Danon, D\'iaz-Guilera,
+  Duch, and Arenas}}]{Danon2005}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Danon}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{D\'iaz-Guilera}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Duch}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Arenas}},
+  \bibinfo{journal}{Journal of Statistical Mechanics: Theory and Experiment}
+  \textbf{\bibinfo{volume}{2005}}, \bibinfo{pages}{P09008}
+  (\bibinfo{year}{2005}),
+  \urlprefix\url{http://stacks.iop.org/1742-5468/2005/i=09/a=P09008}.
+
+\end{thebibliography}
