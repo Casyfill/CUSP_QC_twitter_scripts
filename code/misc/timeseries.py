@@ -4,12 +4,10 @@ import datetime
 import pandas as pd
 
 
-def averageWeek(df, ax, tcol='ts', ccol='id', label=None, 
-				treshold=0, normalize=True, verbose=False, **kwargs):
-	'''calculate average week on ts'''
-
-    s = df[[tcol, ccol]].rename(
-						 columns={tcol: 'ts', ccol: 'id'})  # rename to convention
+def _avWeek(df, tcol='ts', ccol='id', label=None):
+    
+    s = df[[tcol, ccol]].rename(columns={tcol: 'ts', 
+                                         ccol: 'id'})  # rename to convention
 
     s = df[['id', 'ts']].set_index('ts').resample(
         '15Min', how='count').reset_index()
@@ -20,10 +18,13 @@ def averageWeek(df, ax, tcol='ts', ccol='id', label=None,
                                                      hour=x.hour,
                                                      minute=x.minute))
 
-    s = s.groupby(['ts']).agg('mean')
+    if not label: label = ccol
+    return s.groupby(['ts']).agg('mean').rename(columns={'id':label})
 
-    if not label:
-        label = ccol
+
+def averageWeek(df, ax, tcol='ts', ccol='id', label=None, treshold=0, normalize=True, verbose=False, **kwargs):
+    '''calculate average week on ts'''
+    s = _avWeek(df, tcol, ccol, label)
 
     if s.id.sum() >= treshold:
 
@@ -32,7 +33,7 @@ def averageWeek(df, ax, tcol='ts', ccol='id', label=None,
         else:
             sNorm = s
 
-        sNorm.rename(columns={'id': label}, inplace=1)
+        #sNorm.rename(columns={'id': label}, inplace=1)
         sNorm.plot(ax=ax, legend=False, **kwargs)
 
         return sNorm.rename(columns={'id': label})
@@ -43,18 +44,22 @@ def averageWeek(df, ax, tcol='ts', ccol='id', label=None,
 
         pass
 
+def _genBulkWeeks(df, attr, th=0):
+    
+    weeks = []
+    for name, g in df.groupby(attr):
+        #        zs = averageWeek(g, ax=ax, label=name, alpha=.5, treshold=th, **kwargs)
+        zs = _avWeek(df, tcol='ts', ccol='id', label=name)
+        weeks.append(zs)
+    
+    return pd.concat(weeks, axis=1)
+    
 
 def bulkWeeks(df, attr, title='', av=False, th=0, legend=False, **kwargs):
     fig, ax = plt.subplots(figsize=(18,6))
 
-    weeks = []
-
-
-    for name, g in df.groupby(attr):
-        zs = averageWeek(g, ax=ax, label=name, alpha=.5, treshold=th, **kwargs)
-        weeks.append(zs)
+    data = _genBulkWeeks(df, attr, th)
     
-    data = pd.concat(weeks, axis=1)
     if av:
         d = data.mean(axis=1)
         (1.0*d/d.sum()).plot(ax=ax, lw=1.4, color='k', label='Average')
